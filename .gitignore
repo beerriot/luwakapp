@@ -1,0 +1,6 @@
+ebin/
+*~
+rel/luwak
+deps/
+erl_crash.dump
+

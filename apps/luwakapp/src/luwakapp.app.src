@@ -1,0 +1,19 @@
+{application, luwakapp,
+ [
+  {description, "Non-Erlang Luwak Interfaces"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  luwak,
+                  webmachine
+                 ]},
+  {mod, { luwakapp_app, []}},
+  {env, [
+         {riak_ip, "127.0.0.1"},
+         {riak_port, 8087},
+         {http, [ {"127.0.0.1", 8080} ]},
+         {prefix, "luwak"}
+        ]}
+ ]}.
